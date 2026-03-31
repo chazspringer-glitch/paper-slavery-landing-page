@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paper Slavery Book – Discover the Hidden Truth</title>
+  <meta name="description" content="Learn the truth about systemic control after slavery. Get the book Paper Slavery by Chaz Springer." />
+  <meta property="og:title" content="Paper Slavery – Discover the Hidden Truth" />
+  <meta property="og:description" content="Learn the truth about systemic control after slavery. Get the book Paper Slavery by Chaz Springer." />
+  <meta property="og:type" content="website" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: {
+              300: '#fde68a',
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+            }
+          },
+          fontFamily: {
+            serif: ['Georgia', 'Cambria', 'Times New Roman', 'serif'],
+          },
+          animation: {
+            'fade-in': 'fadeIn 1.2s ease forwards',
+            'fade-up': 'fadeUp 1s ease forwards',
+            'glow-pulse': 'glowPulse 2s ease-in-out infinite',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+            fadeUp: {
+              '0%': { opacity: '0', transform: 'translateY(40px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            glowPulse: {
+              '0%, 100%': { boxShadow: '0 0 12px 2px rgba(245,158,11,0.5)' },
+              '50%': { boxShadow: '0 0 28px 8px rgba(245,158,11,0.85)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+
+    body {
+      background-color: #080808;
+      color: #f5f5f5;
+      font-family: 'Georgia', serif;
+      overflow-x: hidden;
+    }
+
+    .gold-gradient {
+      background: linear-gradient(135deg, #f59e0b 0%, #fde68a 50%, #d97706 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .btn-gold {
+      background: linear-gradient(135deg, #d97706 0%, #f59e0b 50%, #fbbf24 100%);
+      color: #000;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 14px 3px rgba(245,158,11,0.45);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn-gold::after {
+      content: '';
+      position: absolute;
+      top: 0; left: -100%;
+      width: 100%; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+      transition: left 0.5s ease;
+    }
+
+    .btn-gold:hover::after { left: 100%; }
+
+    .btn-gold:hover {
+      box-shadow: 0 0 28px 8px rgba(245,158,11,0.85);
+      transform: translateY(-2px);
+    }
+
+    .hero-bg {
+      background:
+        radial-gradient(ellipse at 20% 50%, rgba(180,120,0,0.12) 0%, transparent 55%),
+        radial-gradient(ellipse at 80% 20%, rgba(120,80,0,0.1) 0%, transparent 50%),
+        linear-gradient(180deg, #0a0a0a 0%, #050505 100%);
+    }
+
+    .card-dark {
+      background: linear-gradient(145deg, #111111, #0d0d0d);
+      border: 1px solid rgba(245,158,11,0.15);
+      transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card-dark:hover {
+      border-color: rgba(245,158,11,0.5);
+      transform: translateY(-4px);
+      box-shadow: 0 8px 30px rgba(245,158,11,0.1);
+    }
+
+    .section-divider {
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, #d97706, #fbbf24);
+      margin: 0 auto 1.5rem;
+      border-radius: 2px;
+    }
+
+    /* Scroll animations */
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-left {
+      opacity: 0;
+      transform: translateX(-40px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .reveal-left.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .reveal-right {
+      opacity: 0;
+      transform: translateX(40px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .reveal-right.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .nav-scrolled {
+      background: rgba(8,8,8,0.97) !important;
+      border-bottom: 1px solid rgba(245,158,11,0.2);
+      box-shadow: 0 2px 20px rgba(0,0,0,0.8);
+    }
+
+    .quote-mark {
+      font-size: 5rem;
+      line-height: 0.6;
+      color: rgba(245,158,11,0.25);
+      font-family: Georgia, serif;
+    }
+
+    .noise-overlay {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.025;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    }
+
+    .chain-icon {
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+
+    /* Stagger delays for cards */
+    .stagger-1 { transition-delay: 0.1s; }
+    .stagger-2 { transition-delay: 0.25s; }
+    .stagger-3 { transition-delay: 0.4s; }
+    .stagger-4 { transition-delay: 0.55s; }
+  </style>
+</head>
+<body>
+
+<!-- Noise texture overlay -->
+<div class="noise-overlay"></div>
+
+<!-- ===================== STICKY NAV ===================== -->
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 px-6 flex items-center justify-between">
+  <div class="flex items-center gap-2">
+    <span class="text-gold-400 font-serif text-lg font-bold tracking-wider">PAPER</span>
+    <span class="text-white font-serif text-lg font-bold tracking-widest">SLAVERY</span>
+  </div>
+  <a href="https://a.co/d/0g0IKuCy" target="_blank" rel="noopener noreferrer"
+     class="btn-gold text-xs sm:text-sm px-4 sm:px-6 py-2 sm:py-2.5 inline-block no-underline">
+    Get The Book
+  </a>
+</nav>
+
+
+<!-- ===================== HERO SECTION ===================== -->
+<section class="hero-bg min-h-screen flex flex-col items-center justify-center relative text-center px-6 pt-20 pb-12">
+  <!-- Decorative lines -->
+  <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-yellow-600/30 to-transparent"></div>
+  <div class="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-yellow-600/20 to-transparent"></div>
+
+  <!-- Book badge -->
+  <div class="inline-flex items-center gap-2 bg-yellow-900/20 border border-yellow-700/40 rounded-full px-4 py-1.5 mb-8 text-xs text-gold-400 font-sans tracking-widest uppercase animate-fade-in" style="animation-delay:0.2s; opacity:0; animation-fill-mode:forwards;">
+    <span class="w-1.5 h-1.5 rounded-full bg-gold-400 inline-block"></span>
+    Now Available on Amazon
+  </div>
+
+  <!-- Main headline -->
+  <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight max-w-5xl mx-auto mb-6 animate-fade-in" style="animation-delay:0.4s; opacity:0; animation-fill-mode:forwards;">
+    <span class="text-white">They Told You </span>
+    <span class="gold-gradient">Slavery Ended…</span>
+    <br class="hidden sm:block" />
+    <span class="text-white"> This Book Proves </span>
+    <span class="gold-gradient">It Didn't.</span>
+  </h1>
+
+  <!-- Subheadline -->
+  <p class="text-gray-400 text-lg sm:text-xl md:text-2xl max-w-2xl mx-auto mb-10 leading-relaxed font-sans font-light animate-fade-in" style="animation-delay:0.7s; opacity:0; animation-fill-mode:forwards;">
+    Discover the hidden system of <span class="text-gold-400 font-medium">paper slavery</span> still impacting Black Americans today.
+  </p>
+
+  <!-- CTA -->
+  <div class="animate-fade-in" style="animation-delay:1s; opacity:0; animation-fill-mode:forwards;">
+    <a href="https://a.co/d/0g0IKuCy" target="_blank" rel="noopener noreferrer"
+       class="btn-gold inline-block text-sm sm:text-base px-8 sm:px-12 py-4 sm:py-5 text-center">
+      Get The Book Now &rarr;
+    </a>
+    <p class="text-gray-600 text-xs mt-4 font-sans tracking-wide">Available on Amazon &bull; Ships Worldwide</p>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-fade-in" style="animation-delay:1.5s; opacity:0; animation-fill-mode:forwards;">
+    <span class="text-gray-600 text-xs font-sans tracking-widest uppercase">Scroll</span>
+    <div class="w-px h-10 bg-gradient-to-b from-yellow-700/50 to-transparent"></div>
+  </div>
+</section>
+
+
+<!-- ===================== PROBLEM SECTION ===================== -->
+<section class="py-20 sm:py-28 px-6 bg-[#050505]" id="problem">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-16 reveal">
+      <div class="section-divider"></div>
+      <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight">
+        Why Most People Still Don't<br class="hidden sm:block"/>
+        <span class="gold-gradient">Understand The Truth</span>
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+      <!-- Card 1 -->
+      <div class="card-dark rounded-xl p-8 text-center reveal stagger-1">
+        <span class="chain-icon">📜</span>
+        <h3 class="text-gold-400 font-serif text-xl font-bold mb-3">History Was Rewritten</h3>
+        <p class="text-gray-400 font-sans text-sm leading-relaxed">
+          The narrative of emancipation was carefully crafted to obscure the mechanisms that kept an entire people economically and legally subordinate for generations.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card-dark rounded-xl p-8 text-center reveal stagger-2">
+        <span class="chain-icon">⚖️</span>
+        <h3 class="text-gold-400 font-serif text-xl font-bold mb-3">Wealth Was Never Restored</h3>
+        <p class="text-gray-400 font-sans text-sm leading-relaxed">
+          Promises of land, reparations, and equity were broken. The generational gap in wealth that was manufactured during slavery was never repaired — it was compounded.
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card-dark rounded-xl p-8 text-center reveal stagger-3">
+        <span class="chain-icon">🔗</span>
+        <h3 class="text-gold-400 font-serif text-xl font-bold mb-3">Systems Replaced Chains</h3>
+        <p class="text-gray-400 font-sans text-sm leading-relaxed">
+          Physical bondage gave way to legal, economic, and institutional structures designed to produce the same outcome — control, exploitation, and dispossession.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================== CONCEPT SECTION ===================== -->
+<section class="py-20 sm:py-28 px-6 relative overflow-hidden" id="concept">
+  <!-- Background glow -->
+  <div class="absolute inset-0 pointer-events-none">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-yellow-700/5 blur-3xl"></div>
+  </div>
+
+  <div class="max-w-5xl mx-auto relative z-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <!-- Left: Text -->
+      <div class="reveal-left">
+        <div class="section-divider" style="margin: 0 0 1.5rem 0;"></div>
+        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
+          Introducing:<br/>
+          <span class="gold-gradient">Paper Slavery</span>
+        </h2>
+        <p class="text-gray-400 font-sans text-base leading-relaxed mb-8">
+          A groundbreaking examination of how enslavement was transformed — not abolished — through law, policy, and economic design. The 13th Amendment didn't end slavery. It redefined it.
+        </p>
+        <a href="https://a.co/d/0g0IKuCy" target="_blank" rel="noopener noreferrer"
+           class="btn-gold inline-block text-sm px-8 py-4">
+          Read The Book &rarr;
+        </a>
+      </div>
+
+      <!-- Right: Bullet list -->
+      <div class="reveal-right">
+        <ul class="space-y-5">
+          <li class="flex items-start gap-4">
+            <span class="text-gold-400 mt-1 text-lg flex-shrink-0">&#9670;</span>
+            <div>
+              <h4 class="text-white font-serif font-bold text-lg mb-1">The Loophole in the 13th Amendment</h4>
+              <p class="text-gray-500 font-sans text-sm leading-relaxed">A single clause that preserved slavery under a new name — punishment for crime.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="text-gold-400 mt-1 text-lg flex-shrink-0">&#9670;</span>
+            <div>
+              <h4 class="text-white font-serif font-bold text-lg mb-1">Legal Systems That Replaced Physical Slavery</h4>
+              <p class="text-gray-500 font-sans text-sm leading-relaxed">Convict leasing, Black Codes, Jim Crow — a continuum of control written into law.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="text-gold-400 mt-1 text-lg flex-shrink-0">&#9670;</span>
+            <div>
+              <h4 class="text-white font-serif font-bold text-lg mb-1">Generational Economic Control</h4>
+              <p class="text-gray-500 font-sans text-sm leading-relaxed">How wealth extraction was engineered across generations and what that looks like today.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="text-gold-400 mt-1 text-lg flex-shrink-0">&#9670;</span>
+            <div>
+              <h4 class="text-white font-serif font-bold text-lg mb-1">Hidden Structures Still Active Today</h4>
+              <p class="text-gray-500 font-sans text-sm leading-relaxed">The systems have evolved — but their function has not. The evidence is hiding in plain sight.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================== WHAT YOU'LL LEARN ===================== -->
+<section class="py-20 sm:py-28 px-6 bg-[#050505]" id="learn">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-16 reveal">
+      <div class="section-divider"></div>
+      <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-white">
+        What You'll <span class="gold-gradient">Discover Inside</span>
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6">
+      <!-- Card 1 -->
+      <div class="card-dark rounded-xl p-7 flex gap-5 items-start reveal stagger-1">
+        <div class="flex-shrink-0 w-10 h-10 rounded-full border border-yellow-700/50 flex items-center justify-center text-gold-400 font-bold font-serif text-lg">1</div>
+        <div>
+          <h3 class="text-white font-serif font-bold text-xl mb-2">The Truth About Post-Slavery America</h3>
+          <p class="text-gray-500 font-sans text-sm leading-relaxed">Uncover what actually happened in the decades after the Civil War — and why it was buried.</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card-dark rounded-xl p-7 flex gap-5 items-start reveal stagger-2">
+        <div class="flex-shrink-0 w-10 h-10 rounded-full border border-yellow-700/50 flex items-center justify-center text-gold-400 font-bold font-serif text-lg">2</div>
+        <div>
+          <h3 class="text-white font-serif font-bold text-xl mb-2">How Systems Replaced Bondage</h3>
+          <p class="text-gray-500 font-sans text-sm leading-relaxed">A deep dive into the legal, financial, and political machinery engineered to maintain subjugation.</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card-dark rounded-xl p-7 flex gap-5 items-start reveal stagger-3">
+        <div class="flex-shrink-0 w-10 h-10 rounded-full border border-yellow-700/50 flex items-center justify-center text-gold-400 font-bold font-serif text-lg">3</div>
+        <div>
+          <h3 class="text-white font-serif font-bold text-xl mb-2">The Economic Impact Today</h3>
+          <p class="text-gray-500 font-sans text-sm leading-relaxed">See the direct line between historical extraction and the wealth gap, incarceration rates, and systemic poverty of today.</p>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card-dark rounded-xl p-7 flex gap-5 items-start reveal stagger-4">
+        <div class="flex-shrink-0 w-10 h-10 rounded-full border border-yellow-700/50 flex items-center justify-center text-gold-400 font-bold font-serif text-lg">4</div>
+        <div>
+          <h3 class="text-white font-serif font-bold text-xl mb-2">A New Perspective on History</h3>
+          <p class="text-gray-500 font-sans text-sm leading-relaxed">Challenge everything you were taught. Walk away with clarity, context, and a new framework for understanding America.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================== AUTHOR SECTION ===================== -->
+<section class="py-20 sm:py-28 px-6 relative overflow-hidden" id="author">
+  <div class="absolute inset-0 pointer-events-none">
+    <div class="absolute bottom-0 right-0 w-[500px] h-[500px] rounded-full bg-yellow-900/5 blur-3xl"></div>
+  </div>
+
+  <div class="max-w-4xl mx-auto relative z-10">
+    <div class="text-center mb-12 reveal">
+      <div class="section-divider"></div>
+      <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-white">
+        Why This Book <span class="gold-gradient">Was Written</span>
+      </h2>
+    </div>
+
+    <div class="card-dark rounded-2xl p-8 sm:p-12 reveal">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center gap-5 mb-8">
+        <div class="w-16 h-16 rounded-full bg-gradient-to-br from-yellow-700 to-yellow-500 flex items-center justify-center text-black font-bold font-serif text-2xl flex-shrink-0">
+          CS
+        </div>
+        <div>
+          <h3 class="text-gold-400 font-serif font-bold text-xl">Chaz Springer</h3>
+          <p class="text-gray-500 font-sans text-sm">Author &bull; Researcher &bull; Truth-Teller</p>
+        </div>
+      </div>
+
+      <blockquote class="border-l-2 border-yellow-700/60 pl-6">
+        <p class="text-gray-300 font-serif text-lg sm:text-xl leading-relaxed mb-6 italic">
+          "I didn't write this book to start a debate. I wrote it because the truth doesn't need permission. For too long, the real story of what happened after slavery has been hidden behind edited history books, political convenience, and institutional silence."
+        </p>
+        <p class="text-gray-400 font-sans text-base leading-relaxed mb-6">
+          <em>Paper Slavery</em> was born out of years of research, frustration, and a deep conviction that Black Americans — and all Americans — deserve the full story. Not the sanitized version. The real one.
+        </p>
+        <p class="text-gray-400 font-sans text-base leading-relaxed">
+          This isn't about blame. It's about clarity. It's about understanding how we got here, so we can finally chart a course forward — with our eyes wide open.
+        </p>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================== SOCIAL PROOF ===================== -->
+<section class="py-20 sm:py-28 px-6 bg-[#050505]" id="reviews">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-16 reveal">
+      <div class="section-divider"></div>
+      <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-white">
+        What Readers <span class="gold-gradient">Are Saying</span>
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+      <!-- Testimonial 1 -->
+      <div class="card-dark rounded-2xl p-7 reveal stagger-1">
+        <div class="quote-mark mb-2">"</div>
+        <p class="text-gray-300 font-serif text-base leading-relaxed mb-6 italic">
+          "I thought I knew Black history. This book dismantled everything I thought I understood and rebuilt it with truth. Every American should read this."
+        </p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-yellow-900/40 border border-yellow-700/30 flex items-center justify-center text-gold-400 font-bold text-sm font-serif">JW</div>
+          <div>
+            <p class="text-white text-sm font-bold font-sans">James W.</p>
+            <p class="text-gray-600 text-xs font-sans">Verified Reader</p>
+          </div>
+          <div class="ml-auto text-gold-400 text-sm">★★★★★</div>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="card-dark rounded-2xl p-7 reveal stagger-2">
+        <div class="quote-mark mb-2">"</div>
+        <p class="text-gray-300 font-serif text-base leading-relaxed mb-6 italic">
+          "Chaz breaks down complicated systems in a way that's undeniable. This is the book I wish existed when I was in school. Powerful, necessary, and long overdue."
+        </p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-yellow-900/40 border border-yellow-700/30 flex items-center justify-center text-gold-400 font-bold text-sm font-serif">TM</div>
+          <div>
+            <p class="text-white text-sm font-bold font-sans">Tamara M.</p>
+            <p class="text-gray-600 text-xs font-sans">Verified Reader</p>
+          </div>
+          <div class="ml-auto text-gold-400 text-sm">★★★★★</div>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="card-dark rounded-2xl p-7 reveal stagger-3">
+        <div class="quote-mark mb-2">"</div>
+        <p class="text-gray-300 font-serif text-base leading-relaxed mb-6 italic">
+          "I've read a lot of books on race and history. None of them hit like this one. The 13th Amendment chapter alone is worth the price. Eye-opening doesn't begin to cover it."
+        </p>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-yellow-900/40 border border-yellow-700/30 flex items-center justify-center text-gold-400 font-bold text-sm font-serif">DR</div>
+          <div>
+            <p class="text-white text-sm font-bold font-sans">Derek R.</p>
+            <p class="text-gray-600 text-xs font-sans">Verified Reader</p>
+          </div>
+          <div class="ml-auto text-gold-400 text-sm">★★★★★</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================== FINAL CTA ===================== -->
+<section class="py-24 sm:py-32 px-6 relative overflow-hidden text-center" id="cta">
+  <!-- Dramatic background -->
+  <div class="absolute inset-0 pointer-events-none">
+    <div class="absolute inset-0 bg-gradient-to-b from-[#080808] via-[#0d0900] to-[#080808]"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full bg-yellow-800/8 blur-3xl"></div>
+    <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-yellow-700/30 to-transparent"></div>
+    <div class="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-yellow-700/20 to-transparent"></div>
+  </div>
+
+  <div class="max-w-3xl mx-auto relative z-10">
+    <div class="reveal">
+      <div class="section-divider"></div>
+      <h2 class="font-serif text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight mb-6">
+        This Isn't Just a Book…<br/>
+        <span class="gold-gradient">It's Awareness.</span>
+      </h2>
+      <p class="text-gray-400 font-sans text-lg sm:text-xl leading-relaxed mb-4 max-w-xl mx-auto">
+        If you've ever questioned the system…<br/>
+        <span class="text-white font-medium">this book is for you.</span>
+      </p>
+      <p class="text-gray-600 font-sans text-sm mb-10">
+        The truth is uncomfortable. But ignorance is more dangerous.
+      </p>
+
+      <a href="https://a.co/d/0g0IKuCy" target="_blank" rel="noopener noreferrer"
+         class="btn-gold inline-block text-base sm:text-lg px-10 sm:px-16 py-4 sm:py-5 animate-glow-pulse">
+        Buy Now on Amazon &rarr;
+      </a>
+
+      <p class="text-gray-600 text-xs mt-6 font-sans tracking-wide">
+        Paperback &bull; Digital Edition &bull; Free Prime Shipping Available
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="bg-[#040404] border-t border-white/5 py-8 px-6 text-center">
+  <div class="max-w-4xl mx-auto">
+    <p class="text-gray-600 font-sans text-xs tracking-widest uppercase mb-2">
+      Paper Slavery &bull; By Chaz Springer
+    </p>
+    <p class="text-gray-700 font-sans text-xs">
+      &copy; 2024 Chaz Springer. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+
+<!-- ===================== JAVASCRIPT ===================== -->
+<script>
+  // Sticky nav scroll effect
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      navbar.classList.add('nav-scrolled');
+    } else {
+      navbar.classList.remove('nav-scrolled');
+    }
+  });
+
+  // Intersection Observer for reveal animations
+  const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, {
+    threshold: 0.1,
+    rootMargin: '0px 0px -60px 0px'
+  });
+
+  revealEls.forEach(el => observer.observe(el));
+
+  // Smooth scroll for any internal anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
